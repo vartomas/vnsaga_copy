@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/body.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>vnsaga copy</title>
 </head>
 <body>
@@ -19,6 +20,18 @@
                 <li class='navEmail'>VEE@VNSAGA.COM</li>
             </ul>
         </nav>
+        <nav class='mobileNav'>
+            <div class='mobileLogo'>
+                <p>V<span>N</span>S</p>
+            </div>
+            <div class='mobileHam'>
+                <div class='hamburger'>
+                    <div class='line line1'></div>
+                    <div class='line line2'></div>
+                    <div class='line line3'></div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <!-- <div class='watermark'>
@@ -26,7 +39,7 @@
         </div> -->
         <div class='mainWrapper'>
             <div class='mainHeader'>
-                <p>Designer. Developer. UX<br>Architecture.</p>
+                <p>Designer. Developer. UX Architecture.</p>
             </div>
             <div class='mainText'>
                 <p>Helping bussinesses become brands that people love.</p>
@@ -50,47 +63,95 @@
         </div>
     </main>
     <section class='photoSection'>
-        <div clas='phContainer1'>
-            <img src="./img/work-featured-image-6.jpg" alt="One Toyota">
-            <div class='imgDesc'>
-                <p>One Toyota</p>
-                <div class='arrowWrapper'>
-                    <div class='arrowShaft'></div>
-                    <i class="arrow right"></i>
+        <div clas='phContainer'>
+            <div class='imgWrapper'>
+                <img src="./img/work-featured-image-6.jpg" alt="One Toyota">
+            </div>
+            <div class='imgDesc imgDesc1'>
+                <div class="imageDesc__header">
+                    <p>One Toyota</p>
+                    <div class='arrowWrapperPh'>
+                        <div class='imageDesc__arrowShaft'></div>
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class='imageDesc__website'>
+                    <p>WEBSITE</p>
                 </div>
             </div>
         </div>
-        <div clas='phContainer2'>
-            <img src="./img/work-featured-image-7.jpg" alt="KBM Management">
-            <div class='imgDesc'>
-                <p>KBM Management</p>
-                <div class='arrowWrapper'>
-                    <div class='arrowShaft'></div>
-                    <i class="arrow right"></i>
+        <div clas='phContainer'>
+            <div class='imgWrapper'>
+                <img src="./img/work-featured-image-7.jpg" alt="KBM Management">
+            </div>
+            <div class='imgDesc imgDesc2'>
+                <div class="imageDesc__header">
+                    <p>KBM Management</p>
+                    <div class='arrowWrapperPh'>
+                        <div class='imageDesc__arrowShaft'></div>
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class='imageDesc__website'>
+                    <p>WEBSITE</p>
                 </div>
             </div>
         </div>
-        <div clas='phContainer3'>
-            <img src="./img/work-featured-image-5.jpg" alt="Insite Wireless">
-            <div class='imgDesc'>
-                <p>Insite Wireless</p>
-                <div class='arrowWrapper'>
-                    <div class='arrowShaft'></div>
-                    <i class="arrow right"></i>
+        <div clas='phContainer'>
+            <div class='imgWrapper'>
+                <img src="./img/work-featured-image-5.jpg" alt="Insite Wireless">
+            </div>
+            <div class='imgDesc imgDesc3'>
+                <div class="imageDesc__header">
+                    <p>Insite Wireless</p>
+                    <div class='arrowWrapperPh'>
+                        <div class='imageDesc__arrowShaft'></div>
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class='imageDesc__website'>
+                    <p>WEBSITE</p>
                 </div>
             </div>
         </div>
-        <div clas='phContainer4'>
-            <img src="./img/work-featured-image.jpg" alt="InCharity">
-            <div class='imgDesc'>
-                <p>InCharity</p>
-                <div class='arrowWrapper'>
-                    <div class='arrowShaft'></div>
-                    <i class="arrow right"></i>
+        <div clas='phContainer'>
+            <div class='imgWrapper'>
+                <img src="./img/work-featured-image.jpg" alt="InCharity">
+            </div>
+            <div class='imgDesc imgDesc4'>
+                <div class="imageDesc__header">
+                    <p>InCharity</p>
+                    <div class='arrowWrapperPh'>
+                        <div class='imageDesc__arrowShaft'></div>
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class='imageDesc__website'>
+                    <p>WEBSITE</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer></footer>
+    <div class='photoSection__footer'>
+        <div class='photoSection__footer__link'>
+            <p>VIEW MORE WORK</p>
+            <div class='photoSection__footer__arrowWrapper'>
+                <div class='arrowShaft'></div>
+                <i class="arrow right"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class='footer__logo'>VNSAGA</p>
+        <p class='footer__header'>Have a project in mind? Let's <span>begin your project</span>.</p>
+        <p class='footer__hello'>Or if you just want to say "hello"<br>you can email me at:<br><a class='footer__email'>vee@vnsaga.com</a></p>
+        <div>
+            <p class='footer__copyright'>© 2020 vnsaga</p>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="./js/header.js"></script>
 </body>
 </html>

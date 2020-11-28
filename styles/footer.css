@@ -1,0 +1,63 @@
+footer {
+    max-width: 100vw;
+    height: 100vh;
+    color: white;
+    padding-left: 10%;
+    padding-top: 190px;
+    padding-bottom: 110px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    font-size: 1.65em;
+    font-weight: 300;
+    letter-spacing: 10px;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.footer__header {
+    font-size: 45px;
+    width: 45%;
+    line-height: 1.2;
+    margin-bottom: 45px;
+}
+
+.footer__header > span {
+    color: #777;
+    transition: color .3s;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.footer__header > span:hover {
+    color: #49AEC0;
+}
+
+.footer__hello {
+    font-size: 15px;
+    width: 20%;
+    line-height: 1.7;
+}
+
+.footer__email {
+    color: #777;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.footer__email:hover {
+    color: #49AEC0;
+}
+
+.footer__copyright {
+    margin-top: 15%;
+}
+
+path {
+    color: white;
+}

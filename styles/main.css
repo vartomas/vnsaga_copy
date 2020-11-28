@@ -2,7 +2,8 @@ main {
     max-width: 100vw;
     color: white;
     font-weight: 300;
-    height: 90vh;
+    height: 91vh;
+    padding-top: 9vh;
 }
 
 .mainWrapper {
@@ -14,6 +15,7 @@ main {
 .mainHeader {
     font-size: 5em;
     line-height: 120%;
+    max-width: 70%;
 }
 
 .mainText {
@@ -29,6 +31,8 @@ main {
     display: flex;
     max-width: 400px;
     justify-content: space-between;
+    color: rgb(122, 122, 122);
+    font-weight: 300;
 }
 
 .mainLinks__link1 {
@@ -85,31 +89,119 @@ main {
 
 .photoSection {
     max-width: 100vw;
+    height: fit-content;
     display: flex;
-    padding: 0 7%;
+    padding-left: 10%;
+    padding-right: 4%;
+    z-index: 30;
 }
 
 .photoSection > div {
     flex: 1;
+    cursor: pointer;
 }
 
-.photoSection > div > img{
+.imgWrapper {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
-.photoSection > div > div > p {
+.imgWrapper img {
+    width: 101%;
+    transition: all .2s ease;
+    vertical-align: middle;
+    position: relative;
+}
+
+.imgDesc {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    width: 100%;
+    padding-left: 10%;
+    border-style: solid ;
+    border-color: rgb(31, 31, 31);
+}
+
+.imgDesc1 {
+    border-width: 0 1px 1px 1px;
+}
+
+.imgDesc2, .imgDesc3, .imgDesc4 {
+    border-width: 0 1px 1px 0px;
+}
+
+.arrowWrapperPh {
+    height: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    transition: all .3s;
+}
+
+.imageDesc__header {
     color: white;
     font-size: 1.5em;
     font-weight: 300;
-}
-
-.photoSection > div > div {
+    height: fit-content;
     display: flex;
     align-items: center;
 }
 
-.imgDesc {
-    border-width: 0 1px 1px 1px;
-    border: solid rgb(179, 179, 179);
-    width: 100%;
+.imageDesc__website {
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    font-size: .8em;
+}
+
+.imageDesc__arrowShaft {
+    display: inline-block;
+    width: 20px;
+    border: solid white;
+    border-width: 1px 0 0 0;
+    height: 1px;
+    margin-left: 5px;
+}
+
+.photoSection > div:hover .arrowWrapperPh {
+    transform: translateX(10px);
+}
+
+.photoSection > div:hover img {
+    transform: scale(1.05);
+    filter: opacity(0.9);
+}
+
+.photoSection__footer {
+    color: rgb(102, 102, 102);
+    max-width: 100vw;
+    padding: 80px;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.photoSection__footer__link {
+    display: inline-flex;
+    cursor: pointer;
+    padding-left: 2%;
+    transition: color .3s;
+}
+
+.photoSection__footer__link:hover {
+    color: #49AEC0;
+}
+
+.photoSection__footer__arrowWrapper {
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    transition: transform .3s;
+}
+
+.photoSection__footer__link:hover .photoSection__footer__arrowWrapper {
+    transform: translateX(7px);
 }
