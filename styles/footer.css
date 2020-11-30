@@ -4,12 +4,13 @@ footer {
     color: white;
     padding-left: 160px;
     padding-top: 190px;
-    padding-right: 4%;
+    padding-right: 80px;
     padding-bottom: 110px;
     line-height: 2;
     letter-spacing: 1.5px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .footer__logo {
@@ -55,6 +56,40 @@ footer {
     color: #49AEC0;
 }
 
-.footer__copyright {
-    margin-top: 15%;
+.bottomRightLine {
+    position: relative;
+}
+
+.bottomRightLine {
+    position: absolute;
+    right: 65px;
+    bottom: 100px;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+}
+
+.facebookLogo {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.twitterLogo {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.footerLogo {
+    transition: color .3s ease;
+}
+
+.footerLogo:hover {
+    color: #49AEC0;
 }

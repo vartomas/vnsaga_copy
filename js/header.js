@@ -26,10 +26,10 @@ window.addEventListener('scroll', () => {
 })
 
 mobileHam.addEventListener('click', () => {
-    desktopHeaderLogo.style.width = '80px'
-    desktopHeaderLogoText.style.display = 'none'
-    mobileNav.style.visibility = 'visible'
-    desktopNav.style.transform = 'scaleX(0)'
-    header.style.width = '160px'
-    hamburger.style.transform = 'scaleX(1)'
+    desktopHeaderLogo.style.width = '240px'
+    desktopHeaderLogoText.style.display = 'inline-block'
+    mobileNav.style.visibility = 'hidden'
+    desktopNav.style.transform = 'scaleX(1)'
+    header.style.width = '100%'
+    hamburger.style.transform = 'scaleX(0.5)'
 })

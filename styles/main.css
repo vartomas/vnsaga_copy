@@ -5,6 +5,7 @@ main {
     height: 100vh;
     padding-top: 80px;
     padding-left: 160px;
+    padding-right: 80px;
 }
 
 .mainWrapper {
@@ -91,7 +92,7 @@ main {
     height: fit-content;
     display: flex;
     padding-left: 160px;
-    padding-right: 4%;
+    padding-right: 80px;
     z-index: 30;
 }
 

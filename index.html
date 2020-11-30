@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
     <title>vnsaga copy</title>
 </head>
 <body>
@@ -145,16 +146,51 @@
         <p class='footer__logo'>VNSAGA</p>
         <p class='footer__header'>Have a project in mind? Let's <span>begin your project</span>.</p>
         <p class='footer__hello'>Or if you just want to say "hello"<br>you can email me at:<br><a class='footer__email'>vee@vnsaga.com</a></p>
-        <div>
-            <p class='footer__copyright'>© 2020 vnsaga</p>
+        <div class='footer_bottom'>
             <div>
-
+                <p class='footer__copyright'>© 2020 vnsaga</p>
+            </div>
+            <div>
+                <span class='facebookLogo footerLogo'><i class="fab fa-facebook-square"></i></span>
+                <span class='twitterLogo footerLogo'><i class="fab fa-twitter-square"></i></span>
             </div>
         </div>
         <div class='bottomRightLine'>
-
+            <svg height="200" width="200">
+                <line x1="0" y1="200" x2="200" y2="0" style="stroke:rgb(58, 58, 58);stroke-width:1" />
+            </svg>
         </div>
     </footer>
+    <div class='sidebar'>
+        <div class='sidebarHeader'>
+            <div class='startArrowWrapper'>
+                <div class='startArrow'>
+                    <div class='imageDesc__arrowShaft'></div>
+                    <i class="arrow right"></i>
+                </div>
+            </div>
+            <div class='startHeader'>
+                <p>START YOUR FANTASTIC PROJECT</p>
+            </div>
+        </div>
+        <div class='formWrapper'>
+            <p class='formHeader'>Start Project</p>
+            <p class='thanksForm'>Thanks for your interest in working with me. Please complete the details below and I will get back to you within one business day.</p>
+            <form>
+                <label for="name">WHAT WOULD YOU LIKE TO BE CALLED?</label>
+                <input type="text" name='name' placeholder="Your Name">
+                <label for="org">WHAT IS THE NAME OF YOUR COMPANY/ORGANISATION?</label>
+                <input type="text" name='org' placeholder="Vnsaga Inc.">
+                <label for="contacts">WHAT'S YOUR CONTACT INFO?</label>
+                <input type="text" name='contacts' placeholder="Email adress">
+                <input type="text" name='contacts' placeholder="Phone number">
+                <label for="timeframe">WHAT IS THE PROJECT TIMEFRAME?</label>
+                <input type="text" placeholder="I needed it last week, tomorrow, next month, etc.">
+            </form>
+        </div>
+    </div>
     <script src="./js/header.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="https://kit.fontawesome.com/e5566d8256.js" crossorigin="anonymous"></script>
 </body>
 </html>
