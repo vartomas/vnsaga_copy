@@ -41,7 +41,7 @@ header {
     transform: scaleX(1);
     transform-origin: center left;
     overflow: hidden;
-    transition: transform .5s ease;
+    transition: transform .3s ease;
 }
 
 .menu__desktop {

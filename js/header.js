@@ -17,11 +17,9 @@ const applyMobileMenu = () => {
     header.style.width = '160px'
     desktopMenu.style.transform = 'scaleX(0)'
     mobileHam.style.display = 'flex'
-    //---
     mobileLogoText.style.opacity = '1'
     desktopHeaderLogoText.style.opacity = '0'
     desktopHeaderLogoText.style.position = 'absolute'
-    //---
     setTimeout(() => {
         mobileHam.style.opacity = '1'
         hamburger.style.transform = 'scaleX(1)'
@@ -38,11 +36,9 @@ const applyDesktopMenu = () => {
     desktopMenu.style.transform = 'scaleX(1)'
     mobileHam.style.opacity = '0'
     mobileHam.style.display = 'none'
-    //---
     mobileLogoText.style.opacity = '0'
     desktopHeaderLogoText.style.opacity = '1'
     desktopHeaderLogoText.style.position = 'relative'
-    //---
 }
 
 window.addEventListener('scroll', () => {
