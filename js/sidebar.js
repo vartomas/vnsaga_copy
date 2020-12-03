@@ -6,33 +6,40 @@ const formHeader = document.querySelector('.formHeader')
 const body = document.querySelector('body')
 const wrapper = document.querySelector('.wrapper')
 
-let openForm = false
+let formOpen = false
+
+const openForm = () => {
+    sidebar.style.width = '50%'
+    arrow.style.transform = 'rotate(0deg)'
+    wrapper.style.filter = 'brightness(75%)'
+    formOpen = true
+    setTimeout(
+        () => {
+            form.style.display = 'flex'
+            body.style.overflow = 'hidden'
+            form.style.overflow = 'auto'
+            form.style.height = '100%'
+        }, 500)
+}
+
+const closeForm = () => {
+    sidebar.style.width = '80px'
+    arrow.style.transform = 'rotate(180deg)'
+    form.style.display = 'none'
+    body.style.overflow = 'auto'
+    form.style.overflow = 'hidden'
+    form.style.height = '100%'
+    formOpen = false
+    setTimeout(
+        () => {
+            wrapper.style.filter = 'unset'
+        }, 400)
+}
 
 sidebarHeader.addEventListener('click', () => {
-    if (openForm === false) {
-        sidebar.style.width = '50%'
-        arrow.style.transform = 'rotate(0deg)'
-        wrapper.style.filter = 'brightness(75%)'
-        sidebar.style.filter = 'brightness(100%)'
-        openForm = true
-        setTimeout(
-            () => {
-                form.style.display = 'flex'
-                formHeader.style.transform = 'scaleY(1)'
-                body.style.overflow = 'hidden'
-                form.style.overflow = 'auto'
-                form.style.height = '100%'
-            }, 500)
+    if (!formOpen) {
+        openForm()
     } else {
-        sidebar.style.width = '80px'
-        arrow.style.transform = 'rotate(180deg)'
-        form.style.display = 'none'
-        formHeader.style.transform = 'scaleY(0)'
-        body.style.overflow = 'auto'
-        openForm = false
-        setTimeout(
-            () => {
-                wrapper.style.filter = 'brightness(100%)'
-            }, 400)
+        closeForm()
     }
 })
