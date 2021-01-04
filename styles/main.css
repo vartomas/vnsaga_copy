@@ -92,10 +92,16 @@ main {
     display: flex;
     padding-left: 160px;
     padding-right: 80px;
-    z-index: 30;
+    z-index: 0;
+    position: relative;
 }
 
-.photoSection > div {
+/* .photoSection > div {
+
+} */
+
+.phContainer {
+    background-color: rgba(0, 0, 0, 0);
     flex: 1;
     cursor: pointer;
 }
@@ -123,6 +129,11 @@ main {
     padding-left: 10%;
     border-style: solid ;
     border-color: rgb(31, 31, 31);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.imgDesc p {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .imgDesc1 {
@@ -149,12 +160,14 @@ main {
     height: fit-content;
     display: flex;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .imageDesc__website {
     font-weight: 300;
     color: rgb(102, 102, 102);
     font-size: .8em;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .imageDesc__arrowShaft {
@@ -181,6 +194,7 @@ main {
     padding: 80px;
     padding-left: 160px;
     padding-right: 4%;
+    z-index: 1;
 }
 
 .photoSection__footer__link {
@@ -199,8 +213,57 @@ main {
     display: flex;
     align-items: center;
     transition: transform .3s;
+    background-color: transparent;
 }
 
 .photoSection__footer__link:hover .photoSection__footer__arrowWrapper {
     transform: translateX(7px);
+}
+
+.greyBackground {
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.projects {
+    position: absolute;
+    top: 12%;
+    left: 85px;
+    color: white;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.projectsLine {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.latestProjects {
+    position: absolute;
+    right: 180px;
+    top: -120px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.latestProjectsLine {
+    position: absolute;
+    right: 205px;
+    width: 150px;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    transform: rotate(90deg);
 }

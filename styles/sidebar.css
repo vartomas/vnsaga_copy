@@ -119,3 +119,35 @@ input:focus {
 label {
     margin-top: 2em;
 }
+
+.submitBtn {
+    width: 150px;
+    height: 60px;
+    margin-top: 60px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
+}
+
+.submitBtn:hover {
+    background-color: #49AEC0;
+    border: 1px solid #49AEC0;
+}
+
+.submitBtn__arrowWrapper {
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.submitBtn:hover > .submitBtn__arrowWrapper {
+    transform: translateX(7px);
+    background-color: #49AEC0;
+}
